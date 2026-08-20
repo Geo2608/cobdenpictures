@@ -355,6 +355,10 @@ header.scrolled nav {
     object-position: 20% center;
 }
 
+.about-photo:nth-child(3) img {
+    object-position: center 35%;
+}
+
 .about-photo:nth-child(4) img {
     object-position: center 35%;
 }
