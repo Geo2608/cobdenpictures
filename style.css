@@ -8,6 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a:focus-visible {
+    outline: 1px solid #f2f2f2;
+    outline-offset: 5px;
+}
+
 body {
     background: #0b0b0b;
     color: #f2f2f2;
@@ -145,57 +150,30 @@ header.scrolled nav {
     color: #0b0b0b;
 }
 
-/* Sections */
-
-.section {
-    max-width: 1200px;
-    margin: auto;
-    padding: 140px 40px;
-    border-top: 1px solid #222;
-}
-
-.section h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    letter-spacing: -2px;
-}
-
-.section p {
-    max-width: 650px;
-    color: #999;
-    font-size: 18px;
-}
-
 /* Mobile */
 
 @media (max-width: 700px) {
 
     nav {
-        padding: 18px 20px;
+        padding: 18px 15px;
     }
 
     .logo {
-        font-size: 14px;
+        font-size: 12px;
+        letter-spacing: 2px;
     }
 
     .nav-links {
-        gap: 12px;
+        gap: 10px;
     }
 
     .nav-links a {
-        font-size: 10px;
+        font-size: 9px;
+        letter-spacing: 0.5px;
     }
 
     .hero h1 {
         letter-spacing: -3px;
-    }
-
-    .section {
-        padding: 100px 25px;
-    }
-
-    .section h2 {
-        font-size: 40px;
     }
 }
 /* NADIA Project */
@@ -281,8 +259,9 @@ header.scrolled nav {
 
 .credit-row span:first-child {
     color: #666;
-    font-size: 11px;
-    letter-spacing: 2px;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
 }
 
 .credit-row span:last-child {
@@ -398,8 +377,10 @@ header.scrolled nav {
 
 .about-introduction p {
     color: #f2f2f2;
-    font-size: clamp(25px, 3vw, 38px);
-    line-height: 1.4;
+    font-size: clamp(28px, 3.4vw, 42px);
+    line-height: 1.25;
+    letter-spacing: -1px;
+    font-weight: 400;
 }
 
 .about-grid {
@@ -543,7 +524,7 @@ header.scrolled nav {
     display: inline-block;
     color: #f2f2f2;
     text-decoration: none;
-    font-size: 22px;
+    font-size: clamp(16px, 3vw, 22px);
     border-bottom: 1px solid #555;
     padding-bottom: 8px;
     transition: border-color 0.3s ease;
