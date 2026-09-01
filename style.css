@@ -112,7 +112,8 @@ header.scrolled nav {
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 1400px;
+    width: 100%;
     animation: heroFade 1.2s ease-out forwards;
 }
 
@@ -128,6 +129,7 @@ header.scrolled nav {
     line-height: 0.95;
     letter-spacing: -5px;
     margin-bottom: 30px;
+    white-space: nowrap;
     background: linear-gradient(
         90deg,
         #f2f2f2,
