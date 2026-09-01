@@ -181,6 +181,13 @@ header.scrolled nav {
     color: #0b0b0b;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 /* Mobile */
 
 @media (max-width: 700px) {
