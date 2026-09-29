@@ -23,10 +23,11 @@
         <div class="logo">COBDEN PICTURES</div>
 
         <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#films">Films</a>
-            <a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#films">Films</a>
+<a href="#contact">Contact</a>
         </div>
     </nav>
 </header>
@@ -69,6 +70,10 @@
 
 <div class="about-photo about-photo-wide about-photo-large">
     <img src="images/camtyler.jpg" alt="George filming behind the scenes">
+</div>
+
+<div class="about-photo">
+    <img src="images/focuspull.png" alt="George working as a focus puller">
 </div>
 
     <div class="about-photo">
@@ -126,8 +131,8 @@
             <p>
                 I'm George Cobden, currently studying Level 3 Film & Media
                 Development at West Suffolk College. I love being involved
-                behind the scenes, particularly cinematography, editing and
-                sound. I like how small details can completely change a scene —
+                behind the scenes, particularly Camera Operating, Sound, and Editing.
+                I like how small details can completely change a scene —
                 why a character is positioned on one side of the frame, how a
                 piece of music changes the feeling of a moment, or how a sound
                 can make an image feel completely different.
@@ -153,6 +158,84 @@
     </div>
 
 </section>
+
+<section id="experience" class="experience-section">
+
+    <div class="experience-top">
+        <p class="eyebrow">PRODUCTION EXPERIENCE</p>
+        <span class="experience-number">02 / EXPERIENCE</span>
+    </div>
+
+    <div class="experience-intro">
+        <h2>ON<br>SET.</h2>
+
+        <p>
+            A selection of productions I've worked on and the roles
+            I've taken on throughout my journey into film.
+        </p>
+    </div>
+
+    <div class="experience-list">
+
+<div class="experience-item">
+    <div class="experience-meta">
+        <span>2026</span>
+        <span>WEST SUFFOLK COLLEGE</span>
+    </div>
+
+    <div class="experience-main">
+        <h3>THE SCENE</h3>
+
+        <p class="experience-role">
+            CAMERA OPERATOR · FOCUS PULLER
+        </p>
+
+<p>
+    A class production challenge to recreate a scene from a chosen 
+    film, which ultimately became <em>Scream</em> (1996). I worked 
+    within the camera department as Camera Operator and Focus Puller. 
+    Filmed on the <strong>URSA Mini Pro 12K</strong>.
+</p>
+    </div>
+</div>
+<div class="experience-item">
+    <div class="experience-meta">
+        <span>2025</span>
+        <span>STUDENT PRODUCTION</span>
+    </div>
+
+    <div class="experience-main">
+        <h3>FREIGHT NIGHT</h3>
+        <p class="experience-role">
+            SOUND / AUDIO
+        </p>
+        <p>
+            Worked primarily in audio, contributing to the sound
+            production of this student short film.
+        </p>
+    </div>
+</div>
+
+<div class="experience-item">
+    <div class="experience-meta">
+        <span>2025</span>
+        <span>STUDENT PRODUCTION</span>
+    </div>
+
+    <div class="experience-main">
+        <h3>GREED</h3>
+        <p class="experience-role">
+            SOUND / AUDIO · ACTOR
+        </p>
+        <p>
+            Worked on audio and also appeared in the film in one scene.
+        </p>
+    </div>
+</div>
+
+    </div>
+
+</section>
     
 <section id="films" class="work-section">
 
@@ -166,33 +249,7 @@
     </div>
 
     <div class="project-image">
-        <img src="images/nadia4k.png" alt="NADIA short film">
-    </div>
-
-<div class="project-info">
-
-    <div class="film-details">
-
-        <div class="credit-row">
-            <span>DIRECTOR</span>
-            <span>GEORGE COBDEN</span>
-        </div>
-
-        <div class="credit-row">
-            <span>CINEMATOGRAPHY</span>
-            <span>GEORGE COBDEN</span>
-        </div>
-
-        <div class="credit-row">
-            <span>EDITING</span>
-            <span>GEORGE COBDEN</span>
-        </div>
-
-        <div class="credit-row">
-            <span>SOUND</span>
-            <span>GEORGE COBDEN</span>
-        </div>
-
+        <img src="images/nadiaposter.png" alt="NADIA short film poster">
     </div>
 
     <div class="film-action">
@@ -209,6 +266,14 @@
     </div>
 
 </div>
+
+<div class="screenplay-section">
+
+<button class="screenplay-toggle" onclick="toggleScreenplay(this)">
+    READ SCREENPLAY <span>↓</span>
+</button>
+
+    <div class="screenplay-wrapper">
 
 <div class="screenplay-card">
 
@@ -236,6 +301,8 @@
             READ SCREENPLAY →
         </a>
     </div>
+
+</div>
 
 </div>
 
@@ -305,6 +372,15 @@
 
     </div>
 </footer>
+
+<script>
+    function toggleScreenplay(button) {
+        const wrapper = button.nextElementSibling;
+
+        wrapper.classList.toggle("open");
+        button.classList.toggle("open");
+    }
+</script>
 
 <script>
     const header = document.querySelector("header");
