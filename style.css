@@ -219,13 +219,13 @@ header.scrolled nav {
 .work-section {
     max-width: 1200px;
     margin: auto;
-    padding: 140px 40px;
+    padding: 110px 40px;
     border-top: 1px solid #222;
 }
 
 .section-heading {
     max-width: 700px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 .section-heading h2 {
@@ -334,7 +334,7 @@ header.scrolled nav {
 .about-section {
     max-width: 1200px;
     margin: auto;
-    padding: 160px 40px 80px;
+    padding: 110px 40px 80px;
     border-top: 1px solid #222;
 }
 
@@ -357,7 +357,7 @@ header.scrolled nav {
 }
 
 .about-title {
-    padding: 80px 0 90px;
+    padding: 65px 0 70px;
 }
 
 .about-gallery {
@@ -427,7 +427,7 @@ header.scrolled nav {
 .about-introduction {
     max-width: 850px;
     margin-left: auto;
-    padding-bottom: 120px;
+    padding-bottom: 85px;
 }
 
 .about-introduction p {
@@ -645,12 +645,184 @@ header.scrolled nav {
 
 }
 
+/* Film Reviews */
+
+.reviews-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 110px 40px 100px;
+    border-top: 1px solid #222;
+}
+
+.reviews-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #222;
+}
+
+.reviews-top .eyebrow {
+    margin-bottom: 0;
+}
+
+.reviews-number {
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.reviews-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    padding: 65px 0 80px;
+    align-items: end;
+}
+
+.reviews-intro h2 {
+    font-size: clamp(70px, 11vw, 145px);
+    line-height: 0.82;
+    letter-spacing: -7px;
+}
+
+.reviews-intro p {
+    max-width: 520px;
+    color: #999;
+    font-size: 20px;
+    line-height: 1.7;
+    padding-bottom: 8px;
+}
+
+.reviews-list {
+    border-top: 1px solid #222;
+}
+
+.review-item {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    padding: 40px 0;
+    border-bottom: 1px solid #222;
+}
+
+.review-poster {
+    width: 220px;
+    overflow: hidden;
+    border: 1px solid #222;
+    background: #111;
+}
+
+.review-poster img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.review-poster:hover img {
+    transform: scale(1.04);
+}
+
+.review-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+    color: #666;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.review-meta span:first-child {
+    color: var(--accent);
+}
+
+.review-main h3 {
+    font-size: clamp(30px, 4vw, 50px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+}
+
+.review-rating {
+    color: #f2f2f2 !important;
+    font-size: 11px !important;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.review-main p {
+    max-width: 650px;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.review-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 6px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.review-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+@media (max-width: 700px) {
+
+    .reviews-section {
+        padding: 100px 25px;
+    }
+
+    .reviews-intro {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 60px 0 70px;
+    }
+
+    .reviews-intro h2 {
+        letter-spacing: -4px;
+    }
+
+    .reviews-intro p {
+        font-size: 18px;
+    }
+
+    .review-item {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .review-poster {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .review-main h3 {
+        letter-spacing: -1.5px;
+    }
+
+    .review-main p {
+        font-size: 16px;
+    }
+}
+
 /* Contact */
 
 .contact-section {
     max-width: 1200px;
     margin: auto;
-    padding: 160px 40px;
+    padding: 110px 40px;
     border-top: 1px solid #222;
 
     display: grid;
@@ -1047,7 +1219,7 @@ footer {
 .experience-section {
     max-width: 1200px;
     margin: auto;
-    padding: 160px 40px;
+    padding: 110px 40px 100px;
     border-top: 1px solid #222;
 }
 
@@ -1073,7 +1245,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
-    padding: 90px 0 120px;
+    padding: 65px 0 80px;
     align-items: end;
 }
 
@@ -1180,4 +1352,10 @@ footer {
         padding: 40px 0;
     }
 
+}
+
+.experience-item:nth-child(3) .experience-image img {
+    width: 115%;
+    max-width: none;
+    margin-left: -7.5%;
 }
