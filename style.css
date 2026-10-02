@@ -1097,16 +1097,33 @@ footer {
 
 .experience-item {
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 70px;
-    padding: 55px 0;
+    grid-template-columns: 180px 1fr;
+    gap: 35px;
+    padding: 40px 0;
     border-bottom: 1px solid #222;
+}
+
+.experience-image {
+    width: 180px;
+    max-width: 180px;
+    overflow: hidden;
+    border: 1px solid #222;
+    background: #111;
+}
+
+.experience-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.6s ease;
 }
 
 .experience-meta {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 20px;
     color: #666;
     font-size: 10px;
     letter-spacing: 2px;
