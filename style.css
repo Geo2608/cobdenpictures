@@ -108,7 +108,7 @@ header.scrolled nav {
     ), url("images/hero4k.png");
 
     background-size: cover;
-    background-position: center;
+    background-position: left center;
 }
 
 .hero-content {
@@ -1358,4 +1358,79 @@ footer {
     width: 115%;
     max-width: none;
     margin-left: -7.5%;
+}
+
+.review-poster {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.review-poster img {
+    display: block;
+    width: 220px;
+    height: 330px;
+    margin-top: 30px;
+    object-fit: cover;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* THE SCENE — FEATURED PRODUCTION */
+
+.scene-feature {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.50) 45%,
+            rgba(0, 0, 0, 0.35) 100%
+        ),
+        url("images/screamrecreationstill.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* THE SCENE — MOBILE */
+@media (max-width: 600px) {
+    .scene-feature {
+        background-position: center center;
+    }
+}
+
+/* NIGHT FREIGHT — FEATURED PRODUCTION */
+
+.nightfreight-feature {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.50) 45%,
+            rgba(0, 0, 0, 0.35) 100%
+        ),
+        url("images/nightfreightbackground.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NIGHT FREIGHT — MOBILE */
+
+@media (max-width: 600px) {
+    .nightfreight-feature {
+        background-position: center center;
+    }
 }
