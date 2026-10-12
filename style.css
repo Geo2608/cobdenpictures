@@ -1434,3 +1434,32 @@ footer {
         background-position: center center;
     }
 }
+
+/* GREED — FEATURED PRODUCTION */
+
+.greed-feature {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.50) 45%,
+            rgba(0, 0, 0, 0.35) 100%
+        ),
+        url("images/greedbackground.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* GREED — MOBILE */
+
+@media (max-width: 600px) {
+    .greed-feature {
+        background-position: center center;
+    }
+}
