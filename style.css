@@ -1432,6 +1432,7 @@ footer {
 @media (max-width: 600px) {
     .nightfreight-feature {
         background-position: center center;
+        background-size: auto 100%;
     }
 }
 
@@ -1461,5 +1462,6 @@ footer {
 @media (max-width: 600px) {
     .greed-feature {
         background-position: center center;
+        background-size: auto 100%;
     }
 }
